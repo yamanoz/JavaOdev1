@@ -3,16 +3,37 @@ public class Main {
 
     public static void main(String[] args){
 
+        ucgenAlan();
         //noteHesaplama();
-        kdvHesaplama();
+        //kdvHesaplama();
 
     }
+
+    private static void ucgenAlan() {
+        int a,b,c;
+        double cevre,alan;
+        Scanner input=new Scanner(System.in);
+        System.out.print("A kenarina giriniz :");
+        a=input.nextInt();
+
+        System.out.print("B kenarina giriniz :");
+        b=input.nextInt();
+
+        System.out.print("C kenarina giriniz :");
+        c=input.nextInt();
+
+        cevre=(a+b+c)/2;
+        alan=Math.sqrt(cevre*(cevre-a)*(cevre-b)*(cevre-c));
+        System.out.print("Ucgenin Alani :"+alan);
+    }
+
+
     private static void kdvHesaplama() {
         // Ödev: KDV Tutarı Hesaplama
         // Kullanıcıdan alınan para değerinin KDV'li fiyatını ve KDV tutarını hesaplayıp ekrana bastıran program
-
-        double tutar, kdvtutari, kdvOran;
         Scanner input = new Scanner(System.in);
+        double tutar, kdvtutari, kdvOran;
+
         System.out.print("Tutar Giriniz:");
         tutar = input.nextDouble();
         kdvOran=(tutar>0 && tutar<1000) ? 0.18 : 0.08;
