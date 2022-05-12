@@ -3,10 +3,37 @@ public class Main {
 
     public static void main(String[] args){
 
-        ucgenAlan();
+
+
+        daireAlan();
+        //taksimetreHesaplama();
+        //ucgenAlan();
         //noteHesaplama();
         //kdvHesaplama();
 
+    }
+
+    private static void daireAlan() {
+        int r,aci;
+        double pi=3.14,alan;
+        Scanner input=new Scanner(System.in);
+        System.out.print("Yari capa giriniz :");
+        r=input.nextInt();
+        System.out.print("Merkez acisina giriniz :");
+        aci=input.nextInt();
+        alan=(pi*(r*r)*aci)/360;
+        System.out.print("Dairenin Alani :"+alan);
+    }
+
+    private static void taksimetreHesaplama() {
+        int KM;
+        double perKM=2.2,total=10;
+        System.out.print("Mesafeyi KM cinsinden giriniz :");
+        Scanner input=new Scanner(System.in);
+        KM=input.nextInt();
+        total+=perKM*KM;
+        total=total<20?20:total;
+        System.out.print("Toplam :"+total);
     }
 
     private static void ucgenAlan() {
