@@ -3,9 +3,17 @@ public class Main {
 
     public static void main(String[] args){
 
+        double boy,kilo ,VKI;
+        Scanner input=new Scanner(System.in);
+        System.out.print("Lütfen boyunuza (metre cinsinde) giriniz :");
+        boy=input.nextDouble();
+        System.out.print("Lütfen kilonuza giriniz :");
+        kilo=input.nextDouble();
+        VKI=kilo/(boy*boy);
+        System.out.print("Vücut Kilte İndeksiniz :"+VKI);
 
 
-        daireAlan();
+        //daireAlan();
         //taksimetreHesaplama();
         //ucgenAlan();
         //noteHesaplama();
