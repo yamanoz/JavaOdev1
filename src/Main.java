@@ -3,6 +3,37 @@ public class Main {
 
     public static void main(String[] args){
 
+        double arm=2.14,elm=3.67,dom=1.11,muz=0.95,pat=5,tutar;
+        int arsay,elsay,dosay,musay,pasay;
+        Scanner input=new Scanner(System.in);
+        System.out.print("Armut Kac Kilo ? :");
+        arsay=input.nextInt();
+        System.out.print("Elma Kac Kilo ? :");
+        elsay=input.nextInt();
+        System.out.print("Domates Kac Kilo ? :");
+        dosay=input.nextInt();
+        System.out.print("Muz Kac Kilo ? :");
+        musay=input.nextInt();
+        System.out.print("Patlıcan Kac Kilo ? :");
+        pasay=input.nextInt();
+        tutar=arm*arsay+elm*elsay+dom*dosay+muz*musay+pat*pasay;
+        System.out.print("Toplam tutar :"+tutar);
+
+
+
+
+
+
+        //vkiHesaplama();
+        //daireAlan();
+        //taksimetreHesaplama();
+        //ucgenAlan();
+        //noteHesaplama();
+        //kdvHesaplama();
+
+    }
+
+    private static void vkiHesaplama() {
         double boy,kilo ,VKI;
         Scanner input=new Scanner(System.in);
         System.out.print("Lütfen boyunuza (metre cinsinde) giriniz :");
@@ -11,14 +42,6 @@ public class Main {
         kilo=input.nextDouble();
         VKI=kilo/(boy*boy);
         System.out.print("Vücut Kilte İndeksiniz :"+VKI);
-
-
-        //daireAlan();
-        //taksimetreHesaplama();
-        //ucgenAlan();
-        //noteHesaplama();
-        //kdvHesaplama();
-
     }
 
     private static void daireAlan() {
